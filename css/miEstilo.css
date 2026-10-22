@@ -1,0 +1,50 @@
+/* En css utilizar escritura snake_case para clases propias */
+:root{
+    --color_marino: #15122b;
+    --color_lila: #8c90b8;
+    --color_coral: #e8704f;
+    --color_coral_oscuro: #c2441f;
+    --color_gris: #dedad8;
+    --color_texto: #1b1b1b;
+
+    --fuente_titulos: 'Michroma', sans-serif;
+    --fuente_cuerpo: 'Poppins', sans-serif;
+}
+html{ scroll-behavior: smooth; }
+body{ font-family: var(--fuente_cuerpo); color: var(--color_texto); background-color: var(--color_gris); }
+h1, h2, h3{ font-family: var(--fuente_titulos); }
+
+/* Encabezado y menú */
+.encabezado_taller{ background-color: var(--color_marino); }
+.logo_taller{ font-family: var(--fuente_titulos); font-size: 2rem; color: #fff; text-decoration: none; }
+.logo_taller:hover{ color: var(--color_lila); }
+.nav_lila{ background-color: var(--color_lila); }
+.nav_lila .nav-link{ color: var(--color_marino); font-weight: 600; }
+.nav_lila .nav-link:hover, .nav_lila .nav-link.active{ color: #fff; }
+
+/* Portada */
+.hero_taller{ background: linear-gradient(180deg, var(--color_gris) 0%, var(--color_gris) 45%, #aab0cf 100%); }
+.hero_taller h1{ line-height: 1.4; }
+
+/* Botones */
+.btn_coral{ background-color: var(--color_coral); border-color: var(--color_coral); color: var(--color_marino); font-weight: 600; }
+.btn_coral:hover{ background-color: var(--color_marino); border-color: var(--color_marino); color: #fff; }
+
+/* Tarjetas */
+.card{ transition: transform 0.4s ease, box-shadow 0.4s ease; }
+.card:hover{ transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important; }
+.card-img-top{ aspect-ratio: 16 / 10; object-fit: cover; }
+
+/* Nosotros */
+.titulo_coral{ color: var(--color_coral_oscuro); }
+
+/* Pie de página */
+.pie_taller{ background-color: var(--color_lila); }
+.pie_taller a{ color: var(--color_marino); font-weight: 600; text-decoration: none; }
+.pie_taller a:hover{ color: #fff; }
+
+/* Tableta y móvil */
+@media (max-width: 767.98px){
+    .logo_taller{ font-size: 1.4rem; }
+    .hero_taller h1{ font-size: 1.4rem; }
+}
