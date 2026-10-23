@@ -499,3 +499,44 @@ main.flex-grow-1 > section.container{
 #menuCliente{
         z-index:1045;
 }
+/* ---- Mis citas y Perfil ---- */
+.tarjeta_cliente {
+    padding: 20px;
+    border: 1px solid #E1E6ED;
+    border-radius: 14px;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 18px rgba(23, 43, 77, 0.10);
+}
+.subtitulo_cliente {
+    margin-bottom: 1rem;
+    color: #172B4D;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.tabla_citas thead th {
+    color: #294C7A;
+    font-weight: 600;
+}
+.form_cita .form-label {
+    color: #294C7A;
+    font-weight: 600;
+}
+.form_cita .form-control,
+.form_cita .form-select {
+    min-height: 45px;
+    border: 1px solid #C9D2DF;
+    border-radius: 8px;
+    background-color: #F8FAFC;
+}
+.foto_perfil_grande {
+    width: 100%;
+    max-width: 220px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 4px solid #F07832;
+}
+.datos_perfil dt {
+    color: #294C7A;
+    font-weight: 600;
+}
+ 
