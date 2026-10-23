@@ -40,10 +40,10 @@
 
                 <!-- Imagen -->
                 <div class="col-12 col-md-5 imagen_acceso">
-                    <img src="images/llanta.png" alt="Llanta de automóvil">
+                    <img src="images/llanta.jpg" alt="Llanta de automóvil">
                 </div>
                 <!-- Formulario -->
-                <div class="col-12 col-md-7 formulario_coral">
+                <div class=" formulario col-12 col-md-7 formulario_coral">
                     <h1 class="h3 text-center mb-4">Iniciar sesión</h1>
                     <form id="formularioLogin">
                         <div class="mb-3">
@@ -125,6 +125,33 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!--Aparecer los botones para redirigir al usuario -->    
+<script>
+    const formularioLogin = document.getElementById("formularioLogin");
+    const opcionesUsuario = document.getElementById("opcionesUsuario");
+
+    const btnCliente = document.getElementById("btnCliente");
+    const btnAdministrador = document.getElementById("btnAdministrador");
+
+    formularioLogin.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Mostrar las opciones de usuario
+        opcionesUsuario.hidden = false;
+
+        // Ocultar el formulario después de continuar
+        formularioLogin.hidden = true;
+    });
+
+    btnCliente.addEventListener("click", function() {
+        window.location.href = "cliente.html";
+    });
+
+    btnAdministrador.addEventListener("click", function() {
+        window.location.href = "administrador.html";
+    });
+</script>
 
 </body>
 </html>
