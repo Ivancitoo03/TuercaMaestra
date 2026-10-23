@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis vehículos | Tuerca Maestra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/miEstilo.css">
+    <link rel="stylesheet" href="css/panelCliente.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- ENCABEZADO (igual en todas las páginas) -->
+    <header class="encabezado_taller text-center py-3">
+        <a href="index.html" class="logo_taller"><i class="bi bi-gear-wide-connected"></i> Tuerca Maestra</a>
+    </header>
+
+    <div class="container-fluid p-0 d-flex flex-grow-1">
+      <div class="row g-0 w-100">
+
+            <!-- BARRA LATERAL DEL CLIENTE -->
+            <aside class="col-md-3 col-lg-2 barra_lateral text-center py-4">
+                <img src="images/perfil.jpg" class="foto_lateral rounded-circle mb-2" alt="Foto del cliente">
+                <p class="small text-white mb-3">Jorge Ivan<br>Escobar Lara</p>
+                <nav class="d-grid gap-2" aria-label="Menú del cliente">
+                    <a href="inicio.html" class="btn btn_lateral rounded-pill">Inicio</a>
+                    <a href="mis-vehiculos.html" class="btn btn_lateral rounded-pill active" aria-current="page">Mis vehículos</a>
+                    <a href="mis-citas.html" class="btn btn_lateral rounded-pill">Mis citas</a>
+                    <a href="perfil.html" class="btn btn_lateral rounded-pill"><i class="bi bi-person-circle"></i> Perfil</a>
+                    <a href="index.html" class="btn btn_lateral rounded-pill">Cerrar sesión</a>
+                </nav>
+            </aside>
+
+            <main class="col-md-9 col-lg-10 py-4 px-md-5 contenido_panel">
+                <h1 class="h2 text-center mb-4">MIS VEHÍCULOS</h1>
+                <section class="row g-4 justify-content-center">
+                    <article class="col-12 col-lg-8">
+                        <div class="row align-items-center g-3">
+                            <div class="col-sm-6"><img src="images/camaro.png" class="img-fluid rounded-3" alt="Chevrolet Camaro SS 2019 azul"></div>
+                            <div class="col-sm-6">
+                                <dl class="row mb-0 small">
+                                    <dt class="col-5">Marca:</dt><dd class="col-7">Chevrolet</dd>
+                                    <dt class="col-5">Modelo:</dt><dd class="col-7">Camaro SS</dd>
+                                    <dt class="col-5">Placas:</dt><dd class="col-7">EZP 986</dd>
+                                    <dt class="col-5">Año:</dt><dd class="col-7">2019</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-lg-8">
+                        <div class="row align-items-center g-3">
+                            <div class="col-sm-6"><img src="images/silverado.png" class="img-fluid rounded-3" alt="Chevrolet Silverado 2026 gris"></div>
+                            <div class="col-sm-6">
+                                <dl class="row mb-0 small">
+                                    <dt class="col-5">Marca:</dt><dd class="col-7">Chevrolet</dd>
+                                    <dt class="col-5">Modelo:</dt><dd class="col-7">Silverado</dd>
+                                    <dt class="col-5">Placas:</dt><dd class="col-7">JHP 029</dd>
+                                    <dt class="col-5">Año:</dt><dd class="col-7">2026</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn_coral rounded-pill px-4">+ Agregar auto</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie_taller text-center py-2">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4">
+                    <div class="redes d-flex gap-3 fs-4 justify-content-center justify-content-md-start">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h5 class="mb-0 fw-bold">Tuerca Maestra</h5>
+                </div>
+                <div class="col-6 col-md-4 text-md-end">
+                    <h3 class="h6 text-uppercase">Contacto</h3>
+                    <p class="small mb-1"><i class="bi bi-telephone"></i> 477 000 0000</p>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <p class="text-center small mb-0">&copy; 2026 Desarrollado por: Jorge Alberto Ramírez Leal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
