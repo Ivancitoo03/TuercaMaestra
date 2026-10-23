@@ -400,4 +400,7 @@ main.flex-grow-1 > section.container{
     main.flex-grow-1 > section.container{
         padding: 0 !important;
     }
+    .imagen{
+        display: none;
+    }
 }
