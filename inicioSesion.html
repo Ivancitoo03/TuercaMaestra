@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión | Tuerca Maestra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/miEstilo.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- ENCABEZADO (igual en todas las páginas) -->
+    <header class="encabezado_taller text-center py-3">
+        <a href="index.html" class="logo_taller"><i class="bi bi-gear-wide-connected"></i> Tuerca Maestra</a>
+    </header>
+
+    <!-- MENÚ (igual en todas las páginas) -->
+    <nav class="navbar navbar-expand-md nav_lila sticky-top">
+        <div class="container">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+                <ul class="navbar-nav gap-md-4">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="inicioSesion.html">Iniciar sesión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registro.html">Registrarse</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow-1 d-flex align-items-center">
+        <!--FORMULARIO DE INICIO DE SESIÓN-->
+        <section class=" container py-5">
+            <div class="row formulario_acceso g-0 mx-auto">
+
+                <!-- Imagen -->
+                <div class="col-12 col-md-5 imagen_acceso">
+                    <img src="images/llanta.png" alt="Llanta de automóvil">
+                </div>
+                <!-- Formulario -->
+                <div class="col-12 col-md-7 formulario_coral">
+                    <h1 class="h3 text-center mb-4">Iniciar sesión</h1>
+                    <form id="formularioLogin">
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo"
+                                name="correo" autocomplete="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contrasena" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasena"
+                                name="contrasena" autocomplete="current-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-light rounded-pill d-block mx-auto px-4">
+                            <i class="bi bi-box-arrow-in-right"></i> Iniciar sesión
+                        </button>
+                    </form>
+                    
+                     <!-- Se muestra después de que el usuario complete los campos -->
+                      <div id="opcionesUsuario" class="text-center mt-4" hidden>
+                        <p class="fw-bold">¿Cómo deseas ingresar?</p>
+
+                        <div class="d-flex flex-wrap gap-2 justify-content-center">
+                            <button type="button" id="btnCliente"
+                                class="btn btn-light rounded-pill">
+                                <i class="bi bi-person"></i> Cliente
+                            </button>
+
+                            <button type="button" id="btnAdministrador"
+                                class="btn btn-dark rounded-pill">
+                                <i class="bi bi-person-gear"></i> Administrador
+                            </button>
+                        </div>
+
+                        <p class="small mt-3 mb-0">
+                            Esta parte es para poder hacer las las paginas de cliente y administrador.
+                        </p>
+                      </div>
+                
+                    <p class="text-center small mt-4 mb-0">
+                        ¿No tienes cuenta?
+                        <a href="registro.html" class="enlace_formulario">Regístrate aquí</a>
+                    </p>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- PIE DE PÁGINA (igual en todas las páginas) -->
+    <footer class="pie_taller text-center py-2">
+        <div class="container">
+        <div class="row g-4 align-items-center">
+            
+            <!-- Columna 1: -->
+            <div class="col-md-4">
+                <div class="redes d-flex gap-3 fs-4 justify-content-center justify-content-md-start">
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <!-- Columna 2: -->
+            <div class="col-6 col-md-4">
+                <h5 class="mb-0 fw-bold">Tuerca Maestra</h5> 
+            </div>
+            
+            <!-- Columna 3: -->
+            <div class="col-6 col-md-4 text-md-end">
+                <h3 class="h6 text-uppercase">Contacto</h3>
+                <p class="small mb-1"><i class="bi bi-telephone"></i> 477 000 0000</p>
+            </div>
+
+        </div>
+        
+        <hr class="mt-4">
+        <p class="text-center small mb-0">&copy; 2026 Justin Hernandez. Todos los derechos reservados.</p>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

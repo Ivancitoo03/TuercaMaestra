@@ -10,41 +10,233 @@
     --fuente_titulos: 'Michroma', sans-serif;
     --fuente_cuerpo: 'Poppins', sans-serif;
 }
-html{ scroll-behavior: smooth; }
-body{ font-family: var(--fuente_cuerpo); color: var(--color_texto); background-color: var(--color_gris); }
-h1, h2, h3{ font-family: var(--fuente_titulos); }
+html{ 
+    scroll-behavior: smooth;
+ }
+body{ 
+    font-family: var(--fuente_cuerpo); 
+    color: var(--color_texto); 
+    background-color: var(--color_gris); 
+}
+h1, h2, h3{ 
+    font-family: var(--fuente_titulos);
+ }
 
 /* Encabezado y menú */
-.encabezado_taller{ background-color: var(--color_marino); }
-.logo_taller{ font-family: var(--fuente_titulos); font-size: 2rem; color: #fff; text-decoration: none; }
-.logo_taller:hover{ color: var(--color_lila); }
-.nav_lila{ background-color: var(--color_lila); }
-.nav_lila .nav-link{ color: var(--color_marino); font-weight: 600; }
-.nav_lila .nav-link:hover, .nav_lila .nav-link.active{ color: #fff; }
+.encabezado_taller{ 
+    background-color: 
+    var(--color_marino);
+ }
+.logo_taller{ 
+    font-family: var(--fuente_titulos); 
+    font-size: 2rem; 
+    color: #fff; 
+    text-decoration: none; }
+.logo_taller:hover{ 
+    color: var(--color_lila);
+ }
+.nav_lila{ 
+    background-color: var(--color_lila); 
+}
+.nav_lila .nav-link{ 
+    color: var(--color_marino); 
+    font-weight: 600; 
+}
+.nav_lila .nav-link:hover, .nav_lila .nav-link.active{ 
+    color: #fff; 
+}
 
 /* Portada */
-.hero_taller{ background: linear-gradient(180deg, var(--color_gris) 0%, var(--color_gris) 45%, #aab0cf 100%); }
-.hero_taller h1{ line-height: 1.4; }
+.hero_taller{ 
+    background: linear-gradient(180deg, var(--color_gris) 0%, var(--color_gris) 45%, #aab0cf 100%);
+ }
+.hero_taller h1{
+    line-height: 1.4;
+ }
 
 /* Botones */
-.btn_coral{ background-color: var(--color_coral); border-color: var(--color_coral); color: var(--color_marino); font-weight: 600; }
-.btn_coral:hover{ background-color: var(--color_marino); border-color: var(--color_marino); color: #fff; }
+.btn_coral{ 
+    background-color: var(--color_coral);
+    border-color: var(--color_coral);
+    color: var(--color_marino); 
+    font-weight: 600; 
+}
+.btn_coral:hover{ 
+    background-color: var(--color_marino);
+     border-color: var(--color_marino); 
+     color: #fff; }
 
 /* Tarjetas */
-.card{ transition: transform 0.4s ease, box-shadow 0.4s ease; }
-.card:hover{ transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important; }
-.card-img-top{ aspect-ratio: 16 / 10; object-fit: cover; }
+.card{ 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+    }
+.card:hover{ 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2) !important; 
+}
+.card-img-top{
+    aspect-ratio: 16 / 10; object-fit: cover;
+ }
 
 /* Nosotros */
-.titulo_coral{ color: var(--color_coral_oscuro); }
+.titulo_coral{ 
+    color: var(--color_coral_oscuro); 
+}
 
 /* Pie de página */
-.pie_taller{ background-color: var(--color_lila); }
-.pie_taller a{ color: var(--color_marino); font-weight: 600; text-decoration: none; }
-.pie_taller a:hover{ color: #fff; }
+.pie_taller{ 
+    background-color: var(--color_lila); 
+}
+.pie_taller a{ 
+    color: var(--color_marino); 
+    font-weight: 600; text-decoration: none;
+ }
+.pie_taller a:hover{
+     color: #fff; 
+}
 
 /* Tableta y móvil */
 @media (max-width: 767.98px){
-    .logo_taller{ font-size: 1.4rem; }
-    .hero_taller h1{ font-size: 1.4rem; }
+    .logo_taller{ 
+        font-size: 1.4rem;
+     }
+    .hero_taller h1{ 
+        font-size: 1.4rem;
+     }
+}
+
+/*Parte d Justin*/
+/*Inicio de Sesion y registro */
+.pagina_acceso {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #111, #252525, #176b3a);
+}
+.encabezado_acceso {
+    padding: 18px 6%;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.encabezado_acceso a {
+    color: white;
+    text-decoration: none;
+}
+.contenedor_acceso {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+.formulario_acceso {
+    width: 100%;
+    max-width: 430px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+.formulario_registro {
+    max-width: 600px;
+}
+.formulario_acceso h2 {
+    color: #176b3a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.campo_formulario {
+    margin-bottom: 18px;
+}
+.campo_formulario label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+.campo_formulario input,
+.campo_formulario select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+.botones_acceso button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #176b3a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.botones_acceso button:hover {
+    background: #10542c;
+}
+.pie_formulario {
+    margin-top: 20px;
+    text-align: center;
+}
+.pie_formulario a {
+    color: #176b3a;
+    text-decoration: none;
+    font-weight: bold;
+}
+.pie_acceso {
+    padding: 15px;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+/* Panel del cliente */
+.panel_cliente {
+    min-height: 100vh;
+}
+.menu_cliente {
+    padding: 15px;
+    background: #111;
+    color: white;
+    border-radius: 10px;
+}
+.menu_cliente a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.menu_cliente a:hover {
+    background: #176b3a;
+}
+.contenido_cliente {
+    padding: 20px;
+}
+.contenido_cliente h1,
+.contenido_cliente h2 {
+    color: #176b3a;
+}
+/*Celulares */
+@media (max-width: 576px) {
+
+    .encabezado_acceso {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedor_acceso {
+        padding: 20px 12px;
+    }
+    .formulario_acceso {
+        padding: 22px 16px;
+    }
+    .menu_cliente {
+        margin-bottom: 15px;
+    }
+    .contenido_cliente {
+        padding: 12px;
+    }
 }
