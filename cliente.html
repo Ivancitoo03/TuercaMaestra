@@ -13,6 +13,7 @@
 
 <body class="panel_cliente">
     <!-- Encabezado-->
+     <div class="encabezado_fijo_cliente">
     <header class="encabezado_taller text-center py-3">
         <a href="index.html" class="logo_taller">
             <i class="bi bi-gear-wide-connected"></i> Tuerca Maestra
@@ -20,35 +21,64 @@
     </header>
 
     <!--Contenido del panel-->
-    <main class="container-fluid">
-        <div class="row g-0">
-            <!--MENÚ LATERAL -->
-            <aside class="col-12 col-md-3 col-lg-2 menu_cliente">
-                <div class="perfil_cliente text-center">
-                    <img src="images/perfil.jpg" alt="Foto del cliente" class="foto_perfil">
-                    <p class="mb-0 mt-2">Jorge Iván<br>Escobar Lara</p>
-                </div>
-                <nav class="nav flex-column menu_opciones">
-                    <a href="cliente.html" class="btn btn-light btn-sm active">
-                        <i class="bi bi-house"></i> Inicio
-                    </a>
-                    <a href="#vehiculos" class="btn btn-light btn-sm">
-                        <i class="bi bi-car-front"></i> Mis vehículos
-                    </a>
-                    <a href="#citas" class="btn btn-light btn-sm">
-                        <i class="bi bi-calendar-check"></i> Mis citas
-                    </a>
-                    <a href="#perfil" class="btn btn-light btn-sm">
-                        <i class="bi bi-person"></i> Mi perfil
-                    </a>
-                    <a href="index.html" class="btn btn-light btn-sm">
-                        <i class="bi bi-box-arrow-left"></i> Cerrar sesión
-                    </a>
-                </nav>
-            </aside>
+    <div class="menu_superior_cliente">
+    <button class="btn boton_menu_cliente" type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menuCliente"
+            aria-controls="menuCliente"
+            aria-label="Abrir menú del cliente">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <span>Menú de cliente</span>
+    </div>
+    </div>
+
+<!-- PANEL DESPLEGABLE -->
+<div class="offcanvas offcanvas-start menu_cliente"
+     tabindex="-1"
+     id="menuCliente"
+     aria-labelledby="tituloMenuCliente">
+
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="tituloMenuCliente">
+            Tuerca Maestra
+        </h5>
+
+        <button type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Cerrar menú">
+        </button>
+    </div>
+
+    <div class="offcanvas-body">
+        <div class="perfil_cliente text-center">
+            <img src="images/perfil.jpg" alt="Foto del cliente"  class="foto_perfil">
+            <p class="mb-0 mt-2">Jorge Iván<br>Escobar Lara</p>
+        </div>
+        <nav class="nav flex-column menu_opciones">
+            <a href="cliente.html" class="active">
+                <i class="bi bi-house"></i> Inicio
+            </a>
+            <a href="#vehiculos" data-bs-dismiss="offcanvas">
+                <i class="bi bi-car-front"></i> Mis vehículos
+            </a>
+            <a href="#citas" data-bs-dismiss="offcanvas">
+                <i class="bi bi-calendar-check"></i> Mis citas
+            </a>
+            <a href="#perfil" data-bs-dismiss="offcanvas">
+                <i class="bi bi-person"></i> Mi perfil
+            </a>
+            <a href="index.html">
+                <i class="bi bi-box-arrow-left"></i> Cerrar sesión
+            </a>
+        </nav>
+    </div>
+</div>
 
             <!-- ÁREA PRINCIPAL -->
-            <section class="col-12 col-md-9 col-lg-10 contenido_cliente" id="vehiculos">
+            <section class="col-12 contenido_cliente" id="vehiculos">
 
                 <h1 class="titulo_cliente text-center mb-4">
                     BIENVENIDO JORGE
